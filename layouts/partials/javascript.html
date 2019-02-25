@@ -1,0 +1,34 @@
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="/js/core/jquery.min.js"></script>
+<script src="/js/core/popper.min.js"></script>
+<script src="/js/core/bootstrap.min.js"></script>
+
+<!-- NOW UI Kit JavaScript -->
+{{ $now := resources.Get "js/now-ui-kit.js" }}
+{{ $js := $now | resources.Minify | resources.Fingerprint }}
+<script type="text/javascript" src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+
+<!-- Plugins -->
+<script src="/js/plugins/moment.min.js"></script>
+<script src="/js/plugins/bootstrap-switch.js"></script>
+<script src="/js/plugins/bootstrap-tagsinput.js"></script>
+<script src="/js/plugins/bootstrap-selectpicker.js"></script>
+<script src="/js/plugins/jasny-bootstrap.min.js"></script>
+<script src="/js/plugins/nouislider.min.js"></script>
+<script src="/js/plugins/bootstrap-datetimepicker.js"></script>
+
+<script>
+    $(document).ready(function($) {
+        // the body of this function is in js/now-ui-kit.js
+        nowuiKit.initSliders();
+    });
+
+    function scrollToDownload() {
+
+        if ($('.section-download').length != 0) {
+            $("html, body").animate({
+                scrollTop: $('.section-download').offset().top
+            }, 1000);
+        }
+    }
+</script>

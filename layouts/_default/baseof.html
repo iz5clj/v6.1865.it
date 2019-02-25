@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+
+<head>
+    {{ partial "head.html" . }}
+    {{ block "extra_css" . }} {{ end }}
+</head>
+
+<body>
+<!-- {{/* $.Param 'body_class' */}} -->
+    {{ partial "navbar.html" . }}
+    <div class="wrapper">
+        {{ block "body" . }}{{ end }}
+        {{ partial "footer.html" . }}
+    </div>
+    {{ partial "javascript.html" . }}
+    {{ block "extra_javascript" . }} {{ end }}
+</body>
+
+</html>

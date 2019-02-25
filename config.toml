@@ -1,0 +1,72 @@
+baseURL = "https://v6.1865.it/"
+languageCode = "en"
+title = "1865 Residenza d'epoca in Florence"
+disableHugoGeneratorInject = true
+canonifyurls = true
+builddrafts = false
+indexes = false
+
+# Site Params
+[params]
+    title_tag = "1865 Residenza d'epoca Firenze sito ufficiale | 1865"
+    author = "Michel Sabatino at auxe.net"
+    description = "1865 residenza epoca bed and breakfast nel centro storico di Firenze"
+    logo = "/images/logo.png"
+    slide1_image = "/img/108-1865-giovanni-verga1900.jpg"
+    slide2_image = "/img/042-1865-Residenza-epoca-tavolo1900.jpg"
+    # slide3_image = "/img/064-1865-artusi03.jpg"
+    slide3_image = "/img/1865_giardino_383.jpg"
+
+[languages]
+    [languages.en]
+        languageName = "English"
+        title = "1865 Residenza d'epoca in Florence"
+        weight = 1
+        [languages.en.params]
+            title_tag = "1865 Residenza d'epoca Firenze official website"
+
+            header_message = "Best place in town"
+
+            slide1_text = "We are a Guest House, we just have five rooms."
+            slide2_text = "Share insights with other guests, meet new friends."
+            slide3_text = "We recommend secret places based on our knowledge."
+
+    [languages.it]
+        languageName = "Italiano"
+        title = "1865 Residenza d'epoca a Firenze"
+        weight = 2
+        [languages.it.params]
+            title_tag = "1865 Residenza d'epoca Firenze sito ufficiale"
+
+            header_message = "Il posto migliore a Firenze"
+
+            slide1_text = "Siamo una Residenza d'Epoca, abbiamo cinque stanze."
+            slide2_text = "Condividi le tue esperienze con gli altri ospiti."
+            slide3_text = "Raccomandiamo posti autentici e segreti."
+
+            [languages.it.params.navigation]
+            help = "Aiuto"
+
+    [[languages.en.menu.main]]
+        identifier = "home"
+        name = "Home"
+        url = "/"
+        weight = 9
+
+    [[languages.it.menu.main]]
+        identifier = "inizio"
+        name = "Inizio"
+        url = "/"
+        weight = 9
+
+    [[languages.en.menu.main]]
+        identifier = "rooms"
+        name = "rooms"
+        url = "#"
+        weight = 99
+
+    [[languages.it.menu.main]]
+        identifier = "camere"
+        name = "camere"
+        url = "#"
+        weight = 99

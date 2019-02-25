@@ -1,0 +1,89 @@
+/*---------------------
+	Portfolio section
+-----------------------*/
+.portfolio-warp {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.single-portfolio {
+  height: 580px;
+  width: 33.333333%;
+  position: relative;
+  float: left;
+  display: block;
+  background-position: center center;
+}
+
+.single-portfolio.sm-wide {
+  width: 22.222222%;
+}
+
+.single-portfolio:hover .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio-info {
+  position: absolute;
+  width: calc(100% - 110px);
+  height: calc(100% - 110px);
+  left: 55px;
+  top: 55px;
+  text-align: center;
+  padding-top: 220px;
+  border: 1px solid #fff;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.portfolio-info .pfbg {
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  left: -5%;
+  top: -5%;
+  -webkit-transform: scale(1.12);
+  -ms-transform: scale(1.12);
+  transform: scale(1.12);
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+  background-position: center center;
+}
+
+.portfolio-info h5 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  z-index: 9;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.portfolio-info p {
+  font-size: 14px;
+  color: #fff;
+  z-index: 9;
+  position: relative;
+}
+
+.portfolio-filter {
+  list-style: none;
+}
+
+.portfolio-filter li {
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-right: 12px;
+  color: #868686;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.portfolio-filter li.mixitup-control-active {
+  color: #111;
+}

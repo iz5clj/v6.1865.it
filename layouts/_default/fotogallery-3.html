@@ -1,0 +1,77 @@
+{{ define "extra_css" }}
+<link rel="stylesheet" href="/css/imagelightbox.css">
+<link rel="stylesheet" href="/css/portfolio.css">
+{{ end }}
+
+{{ define "body" }}
+    {{ partial "page-header" . }}
+    <!-- Portfolio section start -->
+	<section class="portfolio-section">
+		<div class="portfolio-warp">
+            {{ range .Site.Data.gallery.gallery }}
+                {{ if .enable }}
+        			<!-- single item -->
+        			<div class="single-portfolio set-bg" data-setbg="{{ .image }}">
+        				<a href="{{ .image }}" class="portfolio-info">
+        					<div class="pfbg set-bg" data-setbg="{{ .image }}"></div>
+        					<h5>Summer in the desert</h5>
+        					<p>Landscape Photography</p>
+        				</a>
+        			</div>
+                {{ end }}
+            {{ end }}
+        </div>
+    </section>
+
+{{ end }}
+
+{{ define "extra_javascript" }}
+<script type="text/javascript" src="/js/imagelightbox.js"></script>
+<script type="text/javascript">
+$(function() {
+    var
+        activityIndicatorOn = function() {
+            $('<div id="imagelightbox-loading"><div></div></div>').appendTo('body');
+        },
+        activityIndicatorOff = function() {
+            $('#imagelightbox-loading').remove();
+        },
+        closeButtonOn = function(instance) {
+            $('<button type="button" id="imagelightbox-close" title="Close"></button>').appendTo('body').on('click touchend', function() {
+                $(this).remove();
+                instance.quitImageLightbox();
+                return false;
+            });
+        },
+        closeButtonOff = function() {
+            $('#imagelightbox-close').remove();
+        },
+
+        instanceC = $('a[data-imagelightbox="a"]').imageLightbox({
+            quitOnDocClick: false,
+            onStart: function() {
+                closeButtonOn(instanceC);
+            },
+            onEnd: function() {
+                closeButtonOff();
+                activityIndicatorOff();
+            },
+            onLoadStart: function() {
+                activityIndicatorOn();
+            },
+            onLoadEnd: function() {
+                activityIndicatorOff();
+            }
+        })
+    ;
+
+    	/*------------------
+    		PORTFOLIO
+    	--------------------*/
+    	if($('.portfolio-warp').length > 0 ) {
+    		var containerEl = document.querySelector('.portfolio-warp');
+    		var mixer = mixitup(containerEl);
+    	}
+});
+</script>
+{{ end }}

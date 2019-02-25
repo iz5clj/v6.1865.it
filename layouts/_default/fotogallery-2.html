@@ -1,0 +1,74 @@
+{{ define "extra_css" }}
+<link rel="stylesheet" href="/css/imagelightbox.css">
+<link rel="stylesheet" href="/css/fotogallery-2.css">
+{{ end }}
+
+{{ define "body" }}
+    {{ partial "page-header" . }}
+    <section class="gallery-block cards-gallery">
+        <div class="container">
+            <!-- <div class="heading">
+                <h2>Cards Gallery</h2>
+            </div> -->
+            <div class="row">
+                {{ range .Site.Data.gallery.gallery }}
+                    {{ if .enable }}
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 transform-on-hover">
+                                <a data-imagelightbox="a" class="lightbox" href="{{ .image }}">
+                                    <img src="{{ .image }}" alt="{{ .name }}" class="card-img-top">
+                                </a>
+                                <div class="card-body">
+                                    <h6><a href="#">{{ .name }}</a></h6>
+                                    <!-- <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </section>
+{{ end }}
+
+{{ define "extra_javascript" }}
+<script type="text/javascript" src="/js/imagelightbox.js"></script>
+<script type="text/javascript">
+$(function() {
+    var
+        activityIndicatorOn = function() {
+            $('<div id="imagelightbox-loading"><div></div></div>').appendTo('body');
+        },
+        activityIndicatorOff = function() {
+            $('#imagelightbox-loading').remove();
+        },
+        closeButtonOn = function(instance) {
+            $('<button type="button" id="imagelightbox-close" title="Close"></button>').appendTo('body').on('click touchend', function() {
+                $(this).remove();
+                instance.quitImageLightbox();
+                return false;
+            });
+        },
+        closeButtonOff = function() {
+            $('#imagelightbox-close').remove();
+        },
+
+        instanceC = $('a[data-imagelightbox="a"]').imageLightbox({
+            quitOnDocClick: false,
+            onStart: function() {
+                closeButtonOn(instanceC);
+            },
+            onEnd: function() {
+                closeButtonOff();
+                activityIndicatorOff();
+            },
+            onLoadStart: function() {
+                activityIndicatorOn();
+            },
+            onLoadEnd: function() {
+                activityIndicatorOff();
+            }
+        });
+});
+</script>
+{{ end }}

@@ -1,0 +1,60 @@
+{{ define "extra_css" }}
+<link rel="stylesheet" href="/css/magnific-popup.css">
+<link rel="stylesheet" href="/css/fotogallery-2.css">
+{{ end }}
+
+{{ define "body" }}
+    {{ partial "page-header" . }}
+    <section class="gallery-block cards-gallery">
+        <div class="container">
+            <!-- <div class="heading">
+                <h2>Cards Gallery</h2>
+            </div> -->
+            <div class="row">
+                {{ range .Site.Data.gallery.gallery }}
+                    {{ if .enable }}
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 transform-on-hover magnific">
+                                <a class="lightbox" href="{{ .image }}" alt="{{ .name }}">
+                                    <img src="{{ .image }}" alt="{{ .name }}" class="card-img-top">
+                                </a>
+                                <div class="card-body">
+                                    <h6>{{ .name }}</h6>
+                                    <!-- <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </section>
+{{ end }}
+
+{{ define "extra_javascript" }}
+<script type="text/javascript" src="/js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript">
+    $('.magnific').magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'image',
+        image: {
+            titleSrc: function(item) {
+                return item.el.attr('alt');
+            },
+            verticalFit: true,
+            fixedBgPos: true,
+        },
+        gallery: {
+            enabled: true, // set to true to enable gallery
+            preload: [1,2], // read about this option in next Lazy-loading section
+            navigateByImgClick: true,
+            arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
+            tPrev: '', //'Previous (Left arrow key)', // title for left button
+            tNext: '', //'Next (Right arrow key)', // title for right button
+            tCounter: '<span class="mfp-counter">%curr% (%total%)</span>' // markup of counter
+            }
+        ,
+        // other options
+    });
+</script>
+{{ end }}

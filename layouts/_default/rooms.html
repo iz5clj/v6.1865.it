@@ -1,0 +1,44 @@
+{{ define "body" }}
+
+{{ partial "page-header" . }}
+
+<div class="section section-about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 ml-auto mr-auto text-center">
+                <!-- <h2 class="title">{{ .Title }}</h2> -->
+                <!-- <h5 class="description">{{ $.Param "review_text" }}</h5> -->
+            </div>
+        </div>
+        <div class="separator separator-primary"></div>
+        <div class="section-story-overview">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- First image on the left side: bathroom -->
+                    <div class="image-container image-left" style="background-image: url('{{ $.Param "bathroom" }}')">
+                        <p class="blockquote blockquote-primary">
+                            <span class="text-muted">{{ $.Param "review_title"}}</span>
+                            <br>
+                            <br>
+                            "..{{ $.Param "review_sentence" }}.."
+                            <br>
+                            <br>
+                            - {{ $.Param "review_author" }}
+                            <br>
+                            <span class="very-small text-muted">{{ i18n "user_on" . }} {{ $.Param "review_website" }}</span>
+                        </p>
+                    </div>
+                    <!-- Second image on the left side of the article -->
+                    <div class="image-container image-left-bottom" style="background-image: url('{{ $.Param "mainroom_2"}}')"></div>
+                </div>
+                <div class="col-md-5">
+                    <!-- First image on the right side, above the article: main room -->
+                    <div class="image-container image-right" style="background-image: url('{{ $.Param "mainroom_1" }}')"></div>
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ end }}

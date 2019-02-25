@@ -1,0 +1,21 @@
+.very-small {
+  font-size: 0.8rem;
+}
+
+.section-story-overview .image-container:nth-child(2) {
+  margin-top: 420px;
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
+.mfp-close {
+  cursor: -moz-pointer;
+  cursor: -webkit-pointer;
+  cursor: pointer;
+}
+
+/* Remove shadow under slider */
+.carousel .carousel-inner {
+  box-shadow: none;
+  border-radius: 0;
+}

@@ -1,0 +1,82 @@
+[translations]
+other = "Translations."
+
+[book_now]
+other = "Book now"
+
+[book_link]
+other = "https://reservations.verticalbooking.com/reservations/index.html?id_stile=13815&lingua_int=eng&id_albergo=18024&dc=4932"
+
+[user_on]
+other = "User on"
+
+[send_us_message]
+other = "Send us a message."
+
+[message_description]
+other = "You can contact us with compiling this form. We'll get in touch with you as soon as possible."
+
+[your_name]
+other = "Your name"
+
+[email_address]
+other = "Email address"
+
+[phone_number]
+other= "Phone number"
+
+[your_message]
+other = "Your message"
+
+[send_request]
+other = "Send your request"
+
+[features_title]
+other = "1865 HISTORIC GUESTHOUSE"
+
+[find_us]
+other = "Find us here"
+[street]
+other = "Via Luigi Carlo Farini, 12"
+[city]
+other = "50121 Florence"
+[country]
+other = "ITALY"
+[ring]
+other = "Give us a ring"
+[phone]
+other = "+39 333 326 41 26"
+[phone_time]
+other = "Mon - Sun, 8:00 - 18:00"
+[legal_information]
+other = "Legal Information"
+[adelia]
+other = "Adelia SRL"
+[vat]
+other = "vat: IT 04605640483"
+
+[feature1_title]
+other = "New concept"
+[feature1_text]
+other = "An exclusive new guesthouse with 5 luxurious bedrooms, has just opened in a historic building in a residential part of central Florence. Precious design elements combined with period features create an atmosphere of great charm and elegance."
+
+[feature2_title]
+other = "Part of the History"
+[feature2_text]
+other = "Each room is named after an author who was living in Florence when it was the capital of Italy from 1865 until 1871."
+
+[feature3_title]
+other = "Exclusive design"
+[feature3_text]
+other = "Each one is individually designed and furnished, and has a luxurious travertine bathroom, LCD television, air conditioning, and wi-fi. The mattresses, bed linen, bathrobes, and personal toiletries are of first quality, and all made locally in Tuscany."
+
+[feature4_title]
+other = "Like at home"
+[feature4_text]
+other = "The individual, detailed personalisation of each room reflects our most important requirement: to give our guests an authentically Florentine experience combined with a feeling of being at home."
+
+[feature5_title]
+other = "Quality, first of all"
+[feature5_text]
+other = "A full breakfast, included in the cost, is based on fresh produce. It is served every morning in the spectacular red lounge, where coffee, tea, herbal teas, mineral water, and a small library are available 24 hours a day."
+

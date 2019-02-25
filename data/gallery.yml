@@ -1,0 +1,47 @@
+enable  : true
+topTitle: Top Title.
+title   : Title.
+subtitle: Subtitle.
+
+gallery :
+    - image         : "/img/064-1865-artusi03.jpg"
+      name          : Pellegtino Artusi
+      designation   : Head Of Marketing
+      description   : Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+      enable : true
+
+    - image         : "/img/108-1865-giovanni-verga1900.jpg"
+      name          : Giovanni Verga
+      designation   : Web Developer
+      description   : Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+      enable : true
+
+    - image : "/img/073-1865-jessie-white-mario1900.jpg"
+      name : Jessie white Mario
+      designation : This is the designation
+      description : Description
+      enable : true
+
+    - image: "/img/089-1865-karl01.jpg"
+      name : Karl Hillebrand
+      designation : "Analyst and developper"
+      description : "Nice room"
+      enable : true
+
+    - image: "/img/093-1865-Residenza-epoca-camera-fedor1900.jpg"
+      name : Fyodor Dostoyevsky
+      designation : "Analyst and developper"
+      description : "Nice room"
+      enable : true
+
+    - image: "/img/123-Residenza-d'epoca-1865-James02.jpg"
+      name: Henry James
+      designation: Double room
+      description: Description
+      enable: true
+
+    - image: "/img/134-Residenza-epoca-1865.Karl-Bagno01.jpg"
+      name: Karl hillebrand
+      designation: Double room
+      description: Description
+      enable: true

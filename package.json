@@ -1,0 +1,33 @@
+{
+  "name": "v6.1865.it",
+  "version": "1.0.0",
+  "description": "1865 Version 6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michel Sabatino",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "gulp": "^3.9.1",
+    "gulp-count": "^1.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-print": "^5.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/iz5clj/v6.1865.it.git"
+  },
+  "keywords": [
+    "1865",
+    "website"
+  ],
+  "bugs": {
+    "url": "https://github.com/iz5clj/v6.1865.it/issues"
+  },
+  "homepage": "https://github.com/iz5clj/v6.1865.it#readme"
+}

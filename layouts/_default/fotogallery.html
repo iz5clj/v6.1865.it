@@ -1,0 +1,27 @@
+{{ define "body" }}
+
+{{ partial "page-header" . }}
+
+<div class="container mt-5">
+    <!-- <h1 class="text-center">Foto Gallery</h1> -->
+
+    <!-- <p class="page-description text-center">Grid Layout With Zoom Effect</p> -->
+
+    <div class="fotogallery">
+        <div class="row">
+            {{ range .Site.Data.gallery.gallery }}
+                {{ if .enable }}
+                    <div class="col-md-4">
+                        <div class=>
+                            <a data-imagelightbox="a" href="{{ .image }}" title="{{ .name }}">
+                                <img src="{{ .image }}" alt="{{ .name }}" class="lightbox">
+                            </a>
+                        </div>
+                    </div>
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+{{ end }}

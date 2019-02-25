@@ -1,0 +1,20 @@
+<div class="header-3">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            {{ partial "slides/slide1" . }}
+            {{ partial "slides/slide2" . }}
+            {{ partial "slides/slide3" . }}
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" aria-label="Previous">
+            <i class="now-ui-icons arrows-1_minimal-left"></i>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" aria-label="Next">
+            <i class="now-ui-icons arrows-1_minimal-right"></i>
+        </a>
+    </div>
+</div>

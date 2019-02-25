@@ -1,0 +1,81 @@
+[translations]
+other = "Translations."
+
+[book_now]
+other = "Prenota"
+
+[book_link]
+other = "https://reservations.verticalbooking.com/reservations/index.html?id_stile=13815&lingua_int=ita&id_albergo=18024&dc=4932"
+
+[user_on]
+other = "Utente di"
+
+[send_us_message]
+other = "Mandateci un messaggio."
+
+[message_description]
+other = "La preghiamo di compilare il modulo seguente e vi contatteremo il prima possibile."
+
+[your_name]
+other = "Nome"
+
+[email_address]
+other = "Indirizzo email"
+
+[phone_number]
+other= "Numero di telefono"
+
+[your_message]
+other = "Suo messaggio"
+
+[send_request]
+other = "Inviate la vostra richiesta"
+
+[find_us]
+other = "Ci trovate qui"
+[street]
+other = "Via Luigi Carlo Farini, 12"
+[city]
+other = "50121 Firenze"
+[country]
+other = "ITALIA"
+[ring]
+other = "Chiamateci"
+[phone]
+other = "+39 333 326 41 26"
+[phone_time]
+other = "Lun - Dom, 8:00 - 18:00"
+[legal_information]
+other = "Informazioni legali"
+[adelia]
+other = "Adelia SRL"
+[vat]
+other = "iva: IT 04605640483"
+
+[features_title]
+other = "1865 Residenza d'epoca"
+
+[feature1_title]
+other = "Nuovo Concetto"
+[feature1_text]
+other = "E’ appena nata nel centro di Firenze, in un quartiere residenziale, una nuova ed esclusiva guest house di 5 lussuose camere in un palazzo storico: <b>1865</b>. Preziosi elementi di design accostati ad alcuni d’epoca creano un’atmosfera di grande fascino ed eleganza."
+
+[feature2_title]
+other = "Si sente la storia"
+[feature2_text]
+other = "Tutte le camere, ognuna dedicata ad uno scrittore che ha trascorso una parte della sua vita nella Firenze Capitale (1865-1871)."
+
+[feature3_title]
+other = "Disegno esclusivo"
+[feature3_text]
+other = "Sono state disegnate ed arredate su misura; dotate di lussuosi bagni in travertino, oltre che di TV LCD, aria condizionata e WiFi. I materassi, la biancheria, gli accappatoi e i prodotti offerti sono di prima qualità e provengono tutti da aziende toscane."
+
+[feature4_title]
+other = "Come a casa vostra"
+[feature4_text]
+other = "La singola e dettagliata personalizzazione di ogni camera risponde alla nostra esigenza più importante: far provare ai nostri ospiti un'autentica esperienza fiorentina con la sensazione di essere a casa."
+
+[feature5_title]
+other = "Qualita, prima di tutto"
+[feature5_text]
+other = "Una colazione completa,inclusa nel prezzo, a base di prodotti freschi viene servita tutte le mattine nello spettacolare salotto rosso, dove 24 ore su 24 sono a disposizione del cliente caffè, the, tisane, acqua minerale ed una piccola biblioteca."

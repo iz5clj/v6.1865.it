@@ -1,0 +1,23 @@
+enable  : true
+topTitle: "Top Title"
+title   : "Title"
+subtitle: Subtitle.
+
+review  :
+    - num       : "1"
+      title     : "Fantastic"
+      text          : "Michel is a wonderful host, situated in a historical building, filled with history, inserted in a non touristic area, full of amazing restaurants and ten minutes walk from the Duomo. The breakfast is delicious, the room is very spacious and we had a very pleasant time. Fully recommended residenza."
+      sentence      : "the room is very spacious and we had a very pleasant time. Fully recommended residenza."
+      author        : "Gabriella G"
+      website       : "Tripadvisor"
+      room          : "feydor"
+      enable        : true
+
+    - num       : "2"
+      title     : "Fantastic"
+      text          : "Michel is a wonderful host, situated in a historical building, filled with history, inserted in a non touristic area, full of amazing restaurants and ten minutes walk from the Duomo. The breakfast is delicious, the room is very spacious and we had a very pleasant time. Fully recommended residenza."
+      sentence      : "the room is very spacious and we had a very pleasant time. Fully recommended residenza."
+      author        : "Gabriella G"
+      website       : "Expedia"
+      room          : "feydor"
+      enable        : true
