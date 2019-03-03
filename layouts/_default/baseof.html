@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<!-- {{/* $.Param 'body_class' */}} -->
+    <!-- {{/* $.Param 'body_class' */}} -->
     {{ partial "navbar.html" . }}
     <div class="wrapper">
         {{ block "body" . }}{{ end }}
@@ -15,6 +15,9 @@
     </div>
     {{ partial "javascript.html" . }}
     {{ block "extra_javascript" . }} {{ end }}
+
+    {{ partial "google_analytics.html" }}
+
 </body>
 
 </html>

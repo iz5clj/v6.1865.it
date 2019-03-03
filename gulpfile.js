@@ -14,7 +14,9 @@ gulp.task('copy_js', function() {
         'node_modules/jquery/dist/jquery.js',
         'node_modules/bootstrap/dist/js/bootstrap.js'
     ])
-    .pipe(gulp.dest('assets/scripts/'));
+    .pipe(gulp.dest('assets/js/'))
+    .pipe(print())
+    .pipe(count('## files have been copied'));
 });
 
 gulp.task('minify', () => {
