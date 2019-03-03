@@ -2,5 +2,5 @@
 rm -Rf public/
 hugo
 gulp minify
-rsync -azP ./public/ one865@aws03:domains/v6.1865.it/public_html --delete
+rsync -azP ./public/ one865@aws03:public_html --delete
 

@@ -12,8 +12,10 @@ indexes = false
     author = "Michel Sabatino at auxe.net"
     description = "1865 residenza epoca bed and breakfast nel centro storico di Firenze"
     logo = "/images/logo.png"
-    slide1_image = "/img/108-1865-giovanni-verga1900.jpg"
-    slide2_image = "/img/042-1865-Residenza-epoca-tavolo1900.jpg"
+    # slide1_image = "/img/108-1865-giovanni-verga1900.jpg"
+    slide1_image="/img/073-1865-jessie-white-mario1900.jpg"
+    # slide2_image = "/img/042-1865-Residenza-epoca-tavolo1900.jpg"
+    slide2_image ="/img/018-Residenza-d'epoca-1865-Entrata01.jpg"
     # slide3_image = "/img/064-1865-artusi03.jpg"
     slide3_image = "/img/1865_giardino_383.jpg"
 
@@ -27,9 +29,9 @@ indexes = false
 
             header_message = "Best place in town"
 
-            slide1_text = "We are a Guest House, we just have five rooms."
-            slide2_text = "Share insights with other guests, meet new friends."
-            slide3_text = "We recommend secret places based on our knowledge."
+            slide1_text = "We are a Guest House, we just have five rooms"
+            slide2_text = "Share insights with other guests, meet new friends"
+            slide3_text = "We share local tips to make your stay authentic"
 
     [languages.it]
         languageName = "Italiano"
@@ -40,9 +42,9 @@ indexes = false
 
             header_message = "Il posto migliore a Firenze"
 
-            slide1_text = "Siamo una Residenza d'Epoca, abbiamo cinque stanze."
-            slide2_text = "Condividi le tue esperienze con gli altri ospiti."
-            slide3_text = "Raccomandiamo posti autentici e segreti."
+            slide1_text = "Siamo una Residenza d'Epoca, abbiamo cinque stanze"
+            slide2_text = "Condividi le tue esperienze con gli altri ospiti"
+            slide3_text = "Renderemo il vostro soggiorno un esperienza autentica"
 
             [languages.it.params.navigation]
             help = "Aiuto"

@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg bg-white fixed-top navbar-transparent" color-on-scroll="500">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" href="/" rel="tooltip" title="{{ .Site.Params.header_message }}" data-placement="bottom" rel="noopener">
+            <a class="navbar-brand" href="/" rel="noopener">
                 {{ .Site.Title }}
             </a>
             <a class="navbar-brand" href="https://www.instagram.com/1865firenze" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -36,12 +36,12 @@
                 {{ end }}
                 <li class="nav-item">
                   <a class="nav-link btn btn-primary" href="{{ i18n "book_link" }}" rel="noopener" target="_blank">
-                    <p>{{ i18n "book_now" . }}</p>
+                    <p class="text-uppercase">{{ i18n "book_now" . }}</p>
                   </a>
                 </li>
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" id="navbarLanguageSelector" data-toggle="dropdown">
-                        <p>{{ .Language.LanguageName }}</p>
+                        <p class="text-uppercase">{{ .Language.LanguageName }}</p>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarLanguageSelector">
                         {{ range $.Site.Home.AllTranslations }}
