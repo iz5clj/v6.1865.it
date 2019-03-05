@@ -5,7 +5,9 @@ const print = require('gulp-print').default;
 
 gulp.task('copy_bootstrap_sass', function() {
     gulp.src('node_modules/bootstrap/scss/**/*')
-    .pipe(gulp.dest('assets/sass/bootstrap/'));
+    .pipe(gulp.dest('assets/sass/bootstrap/'))
+    .pipe(print())
+    .pipe(count('### files processed.'));
 });
 
 gulp.task('copy_js', function() {
