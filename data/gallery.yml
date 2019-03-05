@@ -45,3 +45,51 @@ gallery :
       designation: Double room
       description: Description
       enable: true
+
+    - image: "/img/131-Residenza-d'epoca-1865-James-Bagno01.jpg"
+      name: ""
+      enable: false
+
+    - image: "/img/129-Residenza-d'epoca-1865-James-Bagno02.jpg"
+      name: ""
+      enable: true
+
+    - image: "/img/1865l-307-mod.jpg"
+      name: " bagno feydor"
+      enable: true
+
+    - image: "/img/047-Residenza-d'epoca-1865-Artusi06.jpg"
+      name: "colazione"
+      enable: true
+
+    - image: "/img/1865h 107 mod.jpg"
+      name: "karl"
+      enable: true
+
+    - image: "/img/1865g 096KarlBathroom.jpg"
+      name: ""
+      enable: true
+
+    - image: "/img/042-1865-Residenza-epoca-tavolo1900.jpg"
+      name : ""
+      enable: true
+
+    - image: "/img/018-Residenza-d'epoca-1865-Entrata02.jpg"
+      name: ""
+      enable: true
+
+    - image: "/img/047-Residenza-d'epoca-1865-Artusi07.jpg"
+      name: ""
+      enable: false
+
+    - image: "/img/138-Residenza-d'epoca-1865-Verga-Bagno02.jpg"
+      name: ""
+      enable: true
+
+    - image: "/img/106-Residenza-d'epoca-1865-Jessie-Bagno02.jpg"
+      name: ""
+      enable: true
+
+    - image: "/img/118-Residenza-epoca-1865-James-Bagno03.jpg"
+      name: ""
+      enable: true 

@@ -14,14 +14,10 @@
                 {{ range .Site.Data.gallery.gallery }}
                     {{ if .enable }}
                         <div class="col-md-6 col-lg-4">
-                            <div class="card border-0 transform-on-hover magnific">
+                            <div class="card magnific">
                                 <a class="lightbox" href="{{ .image }}" alt="{{ .name }}">
-                                    <img src="{{ .image }}" alt="{{ .name }}" class="card-img-top">
+                                    <img style="height: 220px; object-fit: cover;" class="card-img" src="{{ .image }}" alt="{{ .name }}">
                                 </a>
-                                <div class="card-body">
-                                    <h6>{{ .name }}</h6>
-                                    <!-- <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p> -->
-                                </div>
                             </div>
                         </div>
                     {{ end }}
@@ -30,6 +26,8 @@
         </div>
     </section>
 {{ end }}
+
+
 
 {{ define "extra_javascript" }}
 <script type="text/javascript" src="/js/jquery.magnific-popup.min.js"></script>

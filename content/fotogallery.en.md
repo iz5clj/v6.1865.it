@@ -8,5 +8,5 @@ layout = "fotogallery-4"
 body_class = "about-us"
 banner = "/img/018-Residenza-d'epoca-1865-Entrata01.jpg"
 h1_title = "Fotogallery"
-h4_title = "All our rooms, inside and more."
+h4_title = "All our rooms, bathrooms, inside and more."
 +++
