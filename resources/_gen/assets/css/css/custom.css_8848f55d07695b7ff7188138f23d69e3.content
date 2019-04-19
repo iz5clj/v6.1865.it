@@ -25,3 +25,7 @@
   font-weight: 400;
   text-transform: uppercase;
 }
+
+.active {
+  color: blue;
+}

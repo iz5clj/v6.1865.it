@@ -1,5 +1,5 @@
 +++
-title = "Galleria foto"
+title = "Galleria"
 # date = 2018-09-01T17:22:37+02:00
 menu = "main" #Display this page on the nav menu
 weight = "999" #Right-most nav item

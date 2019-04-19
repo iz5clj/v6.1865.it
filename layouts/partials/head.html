@@ -29,6 +29,8 @@
 {{- $myUiCss := $myUiKit | resources.ToCSS $options | minify | fingerprint -}}
 <link rel="stylesheet" href="{{ $myUiCss.RelPermalink }}">
 
-{{- $custom := resources.Get "css/custom.css" -}}
-{{- $fingerCustom := $custom | resources.Fingerprint -}}
-<link rel="stylesheet" href="{{ $fingerCustom.Permalink }}">
+<!-- NOW UI Kit CSS -->
+{{- $myCustomScss := resources.Get "sass/custom.scss" -}}
+{{- $options := (dict "targetPath" "css/custom.css") -}}
+{{- $myCustomCss := $myCustomScss | resources.ToCSS $options | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $myCustomCss.RelPermalink }}">

@@ -1,8 +1,9 @@
-<nav class="navbar navbar-expand-lg bg-white fixed-top navbar-transparent" color-on-scroll="500">
+<nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-transparent" color-on-scroll="500">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" href="/" rel="noopener">
-                {{ .Site.Title }}
+            <a class="navbar-brand" href="{{ "/" | absLangURL }}" rel="noopener">
+                <img src="{{ .Site.Params.logo }}" alt="logo">
+                <!-- {{ .Site.Title }} -->
             </a>
             <a class="navbar-brand" href="https://www.instagram.com/1865firenze" target="_blank"><i class="fab fa-instagram"></i></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,8 +29,8 @@
                     </li>
                     {{ else }}
                     <li class="nav-item">
-                        <a class="nav-link {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL | absLangURL }}" rel="noopener">
-                            <p>{{ .Name }}</p>
+                        <a class="nav-link" href="{{ .URL | absLangURL }}" rel="noopener">
+                            <p class="{{ if $currentPage.IsMenuCurrent "main" . }}current{{ end }}">{{ .Name }}</p>
                         </a>
                     </li>
                     {{ end }}
