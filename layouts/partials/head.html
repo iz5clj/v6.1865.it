@@ -12,7 +12,7 @@
 <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
 <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
 
-<link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto:300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Karla:100,400,700|Roboto:100,300,400" rel="stylesheet">
 
 <!-- Bootstrap from sass -->
 {{- $myBootstrap := resources.Get "sass/myBootstrap.scss" -}}
@@ -29,7 +29,7 @@
 {{- $myUiCss := $myUiKit | resources.ToCSS $options | minify | fingerprint -}}
 <link rel="stylesheet" href="{{ $myUiCss.RelPermalink }}">
 
-<!-- NOW UI Kit CSS -->
+<!-- Custom CSS -->
 {{- $myCustomScss := resources.Get "sass/custom.scss" -}}
 {{- $options := (dict "targetPath" "css/custom.css") -}}
 {{- $myCustomCss := $myCustomScss | resources.ToCSS $options | minify | fingerprint -}}

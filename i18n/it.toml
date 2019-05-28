@@ -11,10 +11,10 @@ other = "https://reservations.verticalbooking.com/reservations/index.html?id_sti
 other = "Utente di"
 
 [send_us_message]
-other = "Mandateci un messaggio."
+other = "Mandateci un messaggio"
 
 [message_description]
-other = "La preghiamo di compilare il modulo seguente e vi contatteremo il prima possibile."
+other = "Si prega di compilare il modulo seguente."
 
 [your_name]
 other = "Nome"
@@ -32,7 +32,7 @@ other = "Suo messaggio"
 other = "Inviate la vostra richiesta"
 
 [find_us]
-other = "Ci trovate qui"
+other = "Dove siamo"
 [street]
 other = "Via Luigi Carlo Farini, 12"
 [city]
@@ -40,7 +40,7 @@ other = "50121 Firenze"
 [country]
 other = "ITALIA"
 [ring]
-other = "Chiamateci"
+other = "Telefono"
 [phone]
 other = "+39 333 326 41 26"
 [phone_time]
@@ -50,7 +50,7 @@ other = "Informazioni legali"
 [adelia]
 other = "Adelia SRL"
 [vat]
-other = "iva: IT 04605640483"
+other = "P.Iva IT 04605640483"
 
 [features_title]
 other = "1865 Residenza d'epoca"

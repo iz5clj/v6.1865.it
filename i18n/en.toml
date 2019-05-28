@@ -11,10 +11,10 @@ other = "https://reservations.verticalbooking.com/reservations/index.html?id_sti
 other = "User on"
 
 [send_us_message]
-other = "Send us a message."
+other = "Send us a message"
 
 [message_description]
-other = "You can contact us with compiling this form. We'll get in touch with you as soon as possible."
+other = "Please fill up the form below."
 
 [your_name]
 other = "Your name"
@@ -53,7 +53,7 @@ other = "Legal Information"
 [adelia]
 other = "Adelia SRL"
 [vat]
-other = "vat: IT 04605640483"
+other = "VAT: IT 04605640483"
 
 [feature1_title]
 other = "New concept"

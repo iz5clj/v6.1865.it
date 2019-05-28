@@ -24,7 +24,7 @@
 
 .title {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 100;
   text-transform: uppercase;
 }
 
@@ -43,3 +43,40 @@
 // .navbar-nav .current {
 //   color: $primary-color;
 // }
+
+@media (max-width: 576px) {
+  .title {
+      font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .title {
+      font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .title {
+      font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1900px) {
+  .title {
+      font-size: 4rem;
+  }
+}
+
+.info-title {
+  text-transform: uppercase;
+}
+
+.info-horizontal .icon {
+  margin-top: 28px;
+}
+
+.section-story-overview .image-container {
+  box-shadow: none;
+  border-radius: 0;
+}
